@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		8450E4132275545F0094D3F0 /* GLPageScrollDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450E4122275545F0094D3F0 /* GLPageScrollDemoViewController.m */; };
 		8450E416227554790094D3F0 /* GLPageInnerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450E415227554790094D3F0 /* GLPageInnerDemoViewController.m */; };
+		8457B2A6235EAC0B006DF3CE /* GLPageScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = 8457B2A4235EAC0B006DF3CE /* GLPageScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8457B2A9235EAC0B006DF3CE /* GLPageScroll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8457B2A2235EAC0A006DF3CE /* GLPageScroll.framework */; };
+		8457B2AA235EAC0B006DF3CE /* GLPageScroll.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8457B2A2235EAC0A006DF3CE /* GLPageScroll.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8457B2AF235EACA8006DF3CE /* GLPageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D32B2C2272EC74009E807D /* GLPageScrollViewController.m */; };
+		8457B2B0235EACA8006DF3CE /* GLPageInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D32B2F2272EECF009E807D /* GLPageInnerViewController.m */; };
+		8457B2B1235EACA8006DF3CE /* GLPageScrollHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D805222759BA5007DFC9F /* GLPageScrollHeadView.m */; };
+		8457B2B2235EACB0006DF3CE /* GLPageScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D32B2B2272EC74009E807D /* GLPageScrollViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8457B2B3235EACB0006DF3CE /* GLPageInnerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D32B2E2272EECF009E807D /* GLPageInnerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8457B2B4235EACB0006DF3CE /* GLPageScrollHeadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 849D805122759BA5007DFC9F /* GLPageScrollHeadView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		849D805322759BA5007DFC9F /* GLPageScrollHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D805222759BA5007DFC9F /* GLPageScrollHeadView.m */; };
 		84D32B162272EBCF009E807D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D32B152272EBCF009E807D /* AppDelegate.m */; };
 		84D32B192272EBCF009E807D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D32B182272EBCF009E807D /* ViewController.m */; };
@@ -20,11 +29,38 @@
 		84D32B302272EECF009E807D /* GLPageInnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D32B2F2272EECF009E807D /* GLPageInnerViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8457B2A7235EAC0B006DF3CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D32B092272EBCF009E807D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8457B2A1235EAC0A006DF3CE;
+			remoteInfo = HGLPageScroll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8457B2AB235EAC0B006DF3CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8457B2AA235EAC0B006DF3CE /* GLPageScroll.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8450E4112275545F0094D3F0 /* GLPageScrollDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPageScrollDemoViewController.h; sourceTree = "<group>"; };
 		8450E4122275545F0094D3F0 /* GLPageScrollDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLPageScrollDemoViewController.m; sourceTree = "<group>"; };
 		8450E414227554790094D3F0 /* GLPageInnerDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPageInnerDemoViewController.h; sourceTree = "<group>"; };
 		8450E415227554790094D3F0 /* GLPageInnerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLPageInnerDemoViewController.m; sourceTree = "<group>"; };
+		8457B2A2235EAC0A006DF3CE /* GLPageScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLPageScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8457B2A4235EAC0B006DF3CE /* GLPageScroll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPageScroll.h; sourceTree = "<group>"; };
+		8457B2A5235EAC0B006DF3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		849D805122759BA5007DFC9F /* GLPageScrollHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPageScrollHeadView.h; sourceTree = "<group>"; };
 		849D805222759BA5007DFC9F /* GLPageScrollHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLPageScrollHeadView.m; sourceTree = "<group>"; };
 		84D32B112272EBCF009E807D /* LexanderA-ScrollDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LexanderA-ScrollDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,20 +80,38 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		84D32B0E2272EBCF009E807D /* Frameworks */ = {
+		8457B29F235EAC0A006DF3CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84D32B0E2272EBCF009E807D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8457B2A9235EAC0B006DF3CE /* GLPageScroll.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8457B2A3235EAC0A006DF3CE /* HGLPageScroll */ = {
+			isa = PBXGroup;
+			children = (
+				8457B2A4235EAC0B006DF3CE /* GLPageScroll.h */,
+				8457B2A5235EAC0B006DF3CE /* Info.plist */,
+			);
+			path = HGLPageScroll;
+			sourceTree = "<group>";
+		};
 		84D32B082272EBCF009E807D = {
 			isa = PBXGroup;
 			children = (
 				84D32B132272EBCF009E807D /* LexanderA-ScrollDemo */,
+				8457B2A3235EAC0A006DF3CE /* HGLPageScroll */,
 				84D32B122272EBCF009E807D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				84D32B112272EBCF009E807D /* LexanderA-ScrollDemo.app */,
+				8457B2A2235EAC0A006DF3CE /* GLPageScroll.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +162,39 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8457B29D235EAC0A006DF3CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8457B2A6235EAC0B006DF3CE /* GLPageScroll.h in Headers */,
+				8457B2B2235EACB0006DF3CE /* GLPageScrollViewController.h in Headers */,
+				8457B2B3235EACB0006DF3CE /* GLPageInnerViewController.h in Headers */,
+				8457B2B4235EACB0006DF3CE /* GLPageScrollHeadView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		8457B2A1235EAC0A006DF3CE /* GLPageScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8457B2AE235EAC0B006DF3CE /* Build configuration list for PBXNativeTarget "GLPageScroll" */;
+			buildPhases = (
+				8457B29D235EAC0A006DF3CE /* Headers */,
+				8457B29E235EAC0A006DF3CE /* Sources */,
+				8457B29F235EAC0A006DF3CE /* Frameworks */,
+				8457B2A0235EAC0A006DF3CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLPageScroll;
+			productName = HGLPageScroll;
+			productReference = 8457B2A2235EAC0A006DF3CE /* GLPageScroll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		84D32B102272EBCF009E807D /* LexanderA-ScrollDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D32B272272EBD1009E807D /* Build configuration list for PBXNativeTarget "LexanderA-ScrollDemo" */;
@@ -115,10 +202,12 @@
 				84D32B0D2272EBCF009E807D /* Sources */,
 				84D32B0E2272EBCF009E807D /* Frameworks */,
 				84D32B0F2272EBCF009E807D /* Resources */,
+				8457B2AB235EAC0B006DF3CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8457B2A8235EAC0B006DF3CE /* PBXTargetDependency */,
 			);
 			name = "LexanderA-ScrollDemo";
 			productName = "LexanderA-ScrollDemo";
@@ -134,6 +223,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "历山大亚";
 				TargetAttributes = {
+					8457B2A1235EAC0A006DF3CE = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					84D32B102272EBCF009E807D = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -153,11 +245,19 @@
 			projectRoot = "";
 			targets = (
 				84D32B102272EBCF009E807D /* LexanderA-ScrollDemo */,
+				8457B2A1235EAC0A006DF3CE /* GLPageScroll */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8457B2A0235EAC0A006DF3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D32B0F2272EBCF009E807D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +271,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8457B29E235EAC0A006DF3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8457B2AF235EACA8006DF3CE /* GLPageScrollViewController.m in Sources */,
+				8457B2B0235EACA8006DF3CE /* GLPageInnerViewController.m in Sources */,
+				8457B2B1235EACA8006DF3CE /* GLPageScrollHeadView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84D32B0D2272EBCF009E807D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +297,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8457B2A8235EAC0B006DF3CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8457B2A1235EAC0A006DF3CE /* GLPageScroll */;
+			targetProxy = 8457B2A7235EAC0B006DF3CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84D32B1A2272EBCF009E807D /* Main.storyboard */ = {
@@ -208,6 +326,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8457B2AC235EAC0B006DF3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HGLPageScroll/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hgl.GLPageScroll;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8457B2AD235EAC0B006DF3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HGLPageScroll/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hgl.GLPageScroll;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		84D32B252272EBD1009E807D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -357,6 +529,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8457B2AE235EAC0B006DF3CE /* Build configuration list for PBXNativeTarget "GLPageScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8457B2AC235EAC0B006DF3CE /* Debug */,
+				8457B2AD235EAC0B006DF3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84D32B0C2272EBCF009E807D /* Build configuration list for PBXProject "LexanderA-ScrollDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

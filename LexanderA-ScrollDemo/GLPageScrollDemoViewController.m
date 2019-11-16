@@ -117,10 +117,23 @@
 #pragma mark - event
 - (IBAction)buttonClick:(UIButton *)sender{
     if (sender.tag == -1) {
-        [self dismissViewControllerAnimated:YES completion:nil];
+        if (self.presentingViewController) {
+            [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+        }else{
+            if (self.navigationController) {
+                if (self.navigationController.viewControllers.count > 1) {
+                    [self.navigationController popViewControllerAnimated:YES];
+                }else{
+                    [self.navigationController.view removeFromSuperview];
+                    [self.navigationController removeFromParentViewController];
+                }
+            }else{
+                [self.view removeFromSuperview];
+                [self removeFromParentViewController];
+            }
+        }
         return;
     }
     self.pageIndex = sender.tag;
 }
-
 @end
